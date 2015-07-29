@@ -1,0 +1,11 @@
+<h1>Good</h1>
+<%= form_for @post do |form|%>
+	<%= form.label :name%>
+	<%= form.text_field :name%>
+	<%= form.label :title%>
+	<%= form.text_field :title%>
+	<%= form.label :tag%>
+	<%= form.text_field :tag%>
+	<%= form.submit "Add"%>
+<% end%>
+<%= link_to "back",posts_path%>

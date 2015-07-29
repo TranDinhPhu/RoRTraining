@@ -1,0 +1,7 @@
+<h1>Home page</h1>
+<%@posts.each do |post|%>
+	<%= link_to post.name, post%>
+	<%= post.title %>
+	<%= link_to "Delete", post, method: :delete, data: { confirm: 'Are you certain you want to delete this?' }%>
+<%end%>
+<p><%= link_to "New post", new_post_path%></p>
