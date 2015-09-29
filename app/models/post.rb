@@ -1,3 +1,3 @@
 class Post < ActiveRecord::Base
-  validates :name, length:{ minimum: 1 }
+  validates :name, length:{ minimum: 3 }
 end
